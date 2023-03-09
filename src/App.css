@@ -1,0 +1,24 @@
+:root {
+  --text-colour: #fff;
+  --background-colour: #444444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--text-colour);
+  background-color: var(--background-colour);
+}
+
+/* HEADER CSS */
+.header_avatar:hover span {
+  cursor: pointer;
+}
+
+.header_avatar:active span {
+  filter: brightness(85%);
+}
+
+.dropdown_technologies ul {
+  margin: 5px;
+}
