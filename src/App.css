@@ -19,6 +19,7 @@ body {
   filter: brightness(85%);
 }
 
+/* DROPDOWN CSS */
 .dropdown_technologies ul {
   margin: 5px;
 }

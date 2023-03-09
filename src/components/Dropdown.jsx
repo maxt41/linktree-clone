@@ -30,7 +30,7 @@ const Dropdown = () => {
     return (
         <Grid container rowSpacing={2}>
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
-                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{ width: '50%', background: background, color: text }}>
+                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{ width: '80%', maxWidth: '50vh', background: background, color: text }}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon style={{ color: text }} />} >
                         <SourceIcon /> Projects
                     </AccordionSummary>
@@ -41,7 +41,7 @@ const Dropdown = () => {
                 </Accordion>
             </Grid>
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} style={{ width: '50%', background: background, color: text }}>
+                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} style={{ width: '80%', maxWidth: '50vh', background: background, color: text }}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon style={{ color: text }} />}>
                         <CodeIcon /> Technology Stack
                     </AccordionSummary>
