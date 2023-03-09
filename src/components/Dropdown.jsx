@@ -36,7 +36,7 @@ const Dropdown = () => {
                     </AccordionSummary>
                     <Divider style={{ borderColor: text }} />
                     <AccordionDetails>
-                        <li>Linktree Clone</li>
+                        <li><a href='https://mtlinktree.netlify.app/'>Linktree Clone</a></li>
                     </AccordionDetails>
                 </Accordion>
             </Grid>
