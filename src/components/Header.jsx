@@ -10,14 +10,16 @@ const Header = () => {
 
     const handleClick = () => {
         if (darkMode) {
-            toast.success('Subscribed!', {
+            navigator.clipboard.writeText(`maxhthomas@outlook.com`)
+            toast.success('Email Copied!', {
                 style: {
                     background: light.backgroundColour,
                     color: light.textColour,
                 }
             })
         } else {
-            toast.success('Subscribed!', {
+            navigator.clipboard.writeText(`maxhthomas@outlook.com`)
+            toast.success('Email Copied!', {
                 style: {
                     background: dark.backgroundColour,
                     color: dark.textColour,
@@ -34,13 +36,14 @@ const Header = () => {
                 <Badge onClick={handleClick} badgeContent={badgeContent} color="primary" overlap="circular" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} className='header_avatar'>
                     <Avatar sx={{ width: 90, height: 90, bgcolor: 'pink', color: 'black', fontWeight: 'bold', letterSpacing: '0.15em' }}>MT</Avatar>
                 </Badge>
+
             </Grid>
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
                 <Typography variant='subtitle' align='center'>
                     MERN Developer
                 </Typography>
             </Grid>
-        </Grid>
+        </Grid >
     )
 }
 
