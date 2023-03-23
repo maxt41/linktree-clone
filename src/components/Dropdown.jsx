@@ -38,7 +38,7 @@ const Dropdown = () => {
                     <Divider style={{ borderColor: text }} />
                     <AccordionDetails>
                         <li><a href='https://mtlinktree.netlify.app/' style={{ color: text }}>Linktree Clone</a></li>
-                        <li><a href='https://mtlastpass.netlify.app/' style={{ color: text }}>LastPas Clone</a></li>
+                        <li><a href='https://mtlastpass.netlify.app/' style={{ color: text }}>LastPass Clone</a></li>
                     </AccordionDetails>
                 </Accordion>
             </Grid>
