@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
-import { Accordion, Grid, AccordionDetails, AccordionSummary } from '@mui/material';
+import { Accordion, Grid, AccordionDetails, AccordionSummary, Stack, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { ThemeContext } from '../context/ThemeContext';
 import CodeIcon from '@mui/icons-material/Code';
@@ -33,7 +33,10 @@ const Dropdown = () => {
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
                 <Accordion expanded={expanded === 'panel0'} onChange={handleChange('panel0')} style={{ width: '80%', maxWidth: '50vh', background: background, color: text }}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon style={{ color: text }} />} >
-                        <SourceIcon /> Personal Projects
+                        <Stack direction='row' spacing='2'>
+                            <SourceIcon />
+                            <Typography variant='subtitle'>Personal Projects</Typography>
+                        </Stack>
                     </AccordionSummary>
                     <Divider style={{ borderColor: text }} />
                     <AccordionDetails>
@@ -45,7 +48,10 @@ const Dropdown = () => {
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center' }}>
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{ width: '80%', maxWidth: '50vh', background: background, color: text }}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon style={{ color: text }} />} >
-                        <WorkIcon /> Professional Projects
+                        <Stack direction='row' spacing='2'>
+                            <WorkIcon />
+                            <Typography variant='subtitle'>Professional Projects</Typography>
+                        </Stack>
                     </AccordionSummary>
                     <Divider style={{ borderColor: text }} />
                     <AccordionDetails className='dropdown_technologies'>
@@ -61,7 +67,10 @@ const Dropdown = () => {
             <Grid item xs={12} style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
                 <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} style={{ width: '80%', maxWidth: '50vh', background: background, color: text }}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon style={{ color: text }} />}>
-                        <CodeIcon /> Technology Stack
+                        <Stack direction='row' spacing='2'>
+                            <CodeIcon />
+                            <Typography variant='subtitle'>Technology Stack</Typography>
+                        </Stack>
                     </AccordionSummary>
                     <Divider style={{ borderColor: text }} />
                     <AccordionDetails className='dropdown_technologies'>
